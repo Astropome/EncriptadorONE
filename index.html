@@ -1,1 +1,51 @@
-NewProject I
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador/Desencriptador De Texto</title>
+    <link rel="icon" href="Imagenes/icono.jpg">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="Encabezado">
+       <img class="logo" src="Imagenes/logo.png" alt="logo">
+       <h1 class="titulo">Encriptador/Desencriptador</h1> 
+    </header>
+
+    <main>
+        <section>
+            <textarea class="texto" rows="30" cols="50" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="botones">
+            <button class="encriptar" onclick="encriptarTexto()">Encriptar</button>
+            <button class="desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+        </div>
+        </section>
+        <section>
+            <textarea class="mensaje" rows="30" cols="50" placeholder="Aquí se mostrará el texto encriptado/desencriptado"></textarea>
+            <button class="copiar" onclick="copiarMensaje()">Copiar</button>
+        </section>
+    </main>
+    
+    <footer class="pieDePagina">
+        <details class="detalle" open>
+            <summary>Datos del Creador</summary> 
+            <p>Gonzalo Pastoriza</p>
+            <p>Alumno ONE - Oracle Next Education</p>
+            <p>Buenos Aires, Argentina</p> 
+        </details>
+        <div class="redes">
+            <img class="instagram" src="Imagenes/instagram.png" alt="instagram"> <p>Somekindofmadness__</p>
+            <img class="facebook" src="Imagenes/facebook.png" alt="facebook"> <p>Gonza Pastoriza</p>
+            <img class="whatsapp" src="Imagenes/whatsapp.png" alt="whatsapp"> <p>+54 9 11 66266302</p>
+        </div> 
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
